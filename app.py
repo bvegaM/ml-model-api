@@ -1,11 +1,15 @@
 import joblib
 import numpy as np
+import logging
 
 from flask import Flask
 from flask import jsonify
 
 
 app = Flask(__name__)
+
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 @app.route('/')
 def homepage():
