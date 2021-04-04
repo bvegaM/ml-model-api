@@ -13,3 +13,10 @@ I used flask to deploy the model in an application that simulates a production o
 ## Dataset
 
   * Happiness dataset: https://www.kaggle.com/unsdsn/world-happiness
+
+## Deploy project
+
+I deployed this project in heroku. The link is: https://machinelearningmodel.herokuapp.com
+
+## API
+I had only one service method and is the predic service. The path is ```https://machinelearningmodel.herokuapp.com/predict```. In this case this service is static because is a little example about machine learning models.
