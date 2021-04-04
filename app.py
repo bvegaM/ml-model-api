@@ -16,4 +16,4 @@ def predict():
 if __name__ == '__main__':
 
     model = joblib.load('./models/best_model.pkl')
-    app.run(port=8080)
+    app.run(debug=True, use_reloader=True)
